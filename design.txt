@@ -1,0 +1,14 @@
+Page d'accueil : 
+    Titre milieu haut
+    Liens pages centre
+
+Autres pages : 
+    Menu de nav sur la gauche en flex-direction: column:
+    Texte dans des bulles
+
+Fonctionnalités : 
+    Dark Mode
+    Responsive (Menu de nav en haut)
+
+Theme des pages : 
+    Blanc, box-shadow couleurs claires (bleu, gris)
