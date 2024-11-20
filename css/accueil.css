@@ -46,7 +46,7 @@ html,body {
     align-items: center;
     border-radius: 70px;
     border: solid 1px #969191;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, hwb(0 0% 100% / 0.08) 0px 0px 0px 1px;
     transition: 0.7s;
     cursor:pointer;
 }
@@ -58,4 +58,5 @@ html,body {
 
 .navbutton:hover {
     transform: scale(1.05);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
