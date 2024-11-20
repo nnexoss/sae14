@@ -44,7 +44,27 @@ body {
 .main {
     background-color: red;
     height: 100vh;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.menu-button {
+    height:0px;
+}
+
+.menu-nav {
+    visibility: hidden;
+}
+
+.menu-button:hover .menu-nav{
+    visibility: visible;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
 }
