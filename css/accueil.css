@@ -91,8 +91,7 @@ html, body {
 
 /* Container style */
 .container {
-    background: rgb(158,153,241);
-    background: radial-gradient(circle, rgb(178, 175, 224) 0%, rgb(195, 195, 212) 35%, rgb(215, 226, 228) 100%);
+    background: #f4f4f4;
     height: 100%;
     display: flex;
     align-items: center;
