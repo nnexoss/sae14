@@ -18,7 +18,7 @@
         <ul>
             <li><a href="../index.html">Accueil</a></li>
             <li><a href>Full-Contact</a></li>
-            <li><a href>À propos</a></li>
+            <li><a href="about.html">À propos</a></li>
         </ul>
         <nav>
             <button><i class="fa-solid fa-circle-half-stroke"></i></button>
@@ -138,7 +138,6 @@
             <!-- Third Carousel: Bienfaits -->
             <div class="carousel-container">
                 <h2>Bienfaits de la Pratique</h2>
-                <button class="carousel-prev">&#10094;</button>
                 <ul class="carousel-items">
                     <li class="carousel-item">
                         <div class="card">
@@ -171,7 +170,6 @@
                         </div>
                     </li>
                 </ul>
-                <button class="carousel-next">&#10095;</button>
             </div>
         
         </section>
@@ -189,22 +187,31 @@
             function updateCarousel() {
                 const offset = -currentIndex * (100 / items.length);
                 carousel.style.transform = `translateX(${offset}%)`;
+                console.log(currentIndex)
+    
+                // Mise à jour de l'état des boutons
+                prevButton.disabled = (currentIndex === 0);
+                nextButton.disabled = (currentIndex === items.length - 1);
             }
         
             prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : 0;
-                updateCarousel();
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
             });
         
             nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-        updateCarousel();
-    });
-
-    // Initialisation pour s'assurer que la première vue est correcte
-    updateCarousel();
-});
-</script>
+                if (currentIndex < items.length - 1) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+        
+            // Initialisation pour s'assurer que la première vue est correcte
+            updateCarousel();
+        });
+    </script>
 
         
 </body>
