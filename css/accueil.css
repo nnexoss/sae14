@@ -26,8 +26,8 @@ body {
     visibility: visible;
     opacity: 1;
     z-index: 1000;
-    animation: fadeOut 0s forwards;
-    animation-delay: 0s;
+    animation: fadeOut 2s forwards;
+    animation-delay: 3s;
 }
 
 .three-body {
