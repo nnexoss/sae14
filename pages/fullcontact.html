@@ -30,7 +30,6 @@
             <!-- First Carousel: Histoire -->
             <div id="history" class="carousel-container">
                 <h2>Histoire du Full-Contact</h2>
-                <button class="carousel-prev">&#10094;</button>
                 <ul class="carousel-items">
                     <li class="carousel-item">
                         <div class="card">
@@ -75,13 +74,11 @@
                         </div>
                     </li>
                 </ul>
-                <button class="carousel-next">&#10095;</button>
             </div>
         
             <!-- Second Carousel: Techniques et Coups -->
             <div id="tech" class="carousel-container">
                 <h2>Techniques et Coups</h2>
-                <button class="carousel-prev">&#10094;</button>
                 <ul class="carousel-items">
                     <li class="carousel-item">
                         <div class="card">
@@ -132,7 +129,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="carousel-next">&#10095;</button>
+    
             </div>
         
             <!-- Third Carousel: Bienfaits -->
@@ -175,44 +172,7 @@
         </section>
         
     </main>
-    <script>
-        document.querySelectorAll('.carousel-container').forEach(container => {
-            const carousel = container.querySelector('.carousel-items');
-            const items = container.querySelectorAll('.carousel-item');
-            const prevButton = container.querySelector('.carousel-prev');
-            const nextButton = container.querySelector('.carousel-next');
-        
-            let currentIndex = 0;
-        
-            function updateCarousel() {
-                const offset = -currentIndex * (100 / items.length);
-                carousel.style.transform = `translateX(${offset}%)`;
-                console.log(currentIndex)
     
-                // Mise à jour de l'état des boutons
-                prevButton.disabled = (currentIndex === 0);
-                nextButton.disabled = (currentIndex === items.length - 1);
-            }
-        
-            prevButton.addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    updateCarousel();
-                }
-            });
-        
-            nextButton.addEventListener('click', () => {
-                if (currentIndex < items.length - 3) {
-                    currentIndex++;
-                    updateCarousel();
-                }
-            });
-        
-            // Initialisation pour s'assurer que la première vue est correcte
-            updateCarousel();
-        });
-    </script>
-
         
 </body>
 
