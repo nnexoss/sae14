@@ -21,9 +21,12 @@ header {
     text-decoration: underline;
 }
 
-header .nom {
-    font-size: 40px;
-    font-weight: 500;
+
+
+header .nom img {
+    width:100px;
+    height:100px;
+    border-radius: 25px;
 }
 
 h2 {
@@ -47,7 +50,7 @@ ul li {
 }
 ul li a {
     color:rgb(9, 2, 32);
-    font-size: 17px;
+    font-size: 23px;
     transition:0.5s;
     text-decoration: none;
     
@@ -145,16 +148,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Section: Objectifs */
-.goals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
 
-.goals-grid div {
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 8px;
+.why-this-site p {
     text-align: center;
 }
