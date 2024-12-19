@@ -3,6 +3,11 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display:flex;
+    flex-direction: column;
 }
 
 .loader {
@@ -18,8 +23,8 @@ html, body {
     visibility: visible;
     opacity: 1;
     z-index: 1000;
-    animation: fadeOut 2s forwards;
-    animation-delay: 3s;
+    animation: fadeOut 0s forwards;
+    animation-delay: 0s;
 
 }
 
@@ -135,59 +140,107 @@ html, body {
         visibility:hidden;
     }
 }
-/* Container style */
-.container {
-    background: #f4f4f4;
-    height: 100%;
+header {
+
+    background-color: #fff; /* Fond blanc */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
 }
 
-/* Box style */
-.box {
-    background: #ddd;
-    width: 70vw;
-    height: 80vh;
-    position: relative;
-    border-radius: 230px;
-    box-shadow: #ddd 0px 7px 29px 0px;
+header .logo h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3f65f0; /* Bleu lors du survol */
+}
+
+/* Section principale */
+main {
+    flex:1;
+    padding: 40px 20px;
     text-align: center;
+    background-image: url(../img/full1.jpg),url(../img/full2.jpg),url(../img/full3.jpg);
+    background-repeat: no-repeat;
+    background-size: 450px 250px, 400px 400px;
+    background-position: 3% 4%, 12% 100%, 50% 95%;
+    background-color: #f4f4f4;
 }
 
-/* Navigation box style */
-.navbox {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 250px;
-    width: 65%;
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
+/* Section d'introduction */
+.intro h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Navigation button style */
-.navbutton {
-    margin: auto;
-    width: 29%;
-    height: 75%;
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section des boutons */
+.buttons h3 {
+    font-size: 1.8em;
+    margin: 30px 0;
+    color: #333;
+}
+
+.button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 70px;
-    border: solid 1px #969191;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, hwb(0 0% 100% / 0.08) 0px 0px 0px 1px;
-    transition: 0.7s;
-    cursor: pointer;
+    gap: 20px;
 }
 
-.navbutton span {
-    font-size: 25px;
-    font-weight: 700;
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3f65f0; /* Bleu */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.navbutton:hover {
-    transform: scale(1.05);
-    box-shadow: rgb(146, 155, 165) 0px 20px 30px -10px;
+.btn:hover {
+    background-color: #1f4fb1; /* Bleu plus foncé au survol */
+    transform: translateY(-3px);
 }
 
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #777;
+}
