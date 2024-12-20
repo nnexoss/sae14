@@ -27,6 +27,9 @@ header {
 }
 
 
+header ul {
+    width:30vw;
+}
 
 header .nom img {
     width:100px;

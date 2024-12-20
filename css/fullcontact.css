@@ -10,13 +10,18 @@ body {
 
 header {
     background-color: #f4f4f4;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 6%;
     border-bottom: 1px solid black;
+    flex-wrap: wrap;
 }
 
+
+header ul {
+    width:30vw;
+}
 
 header .nom img {
     width:100px;
@@ -35,13 +40,12 @@ h2 {
     color:#3f65f0;
 }
 
-header ul {
-    width: 40vw;
-}
 
 ul {
     display:flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
 }
 
 ul li {
@@ -49,8 +53,6 @@ ul li {
     padding: 8px 12px;
 }
 ul li a {
-    display:flex;
-    flex-direction: column;
     color:rgb(9, 2, 32);
     font-size: 23px;
     transition:0.5s;
@@ -88,6 +90,7 @@ nav button:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .carousel-container {
     width: 100%;
@@ -151,25 +154,20 @@ nav button:hover {
         flex: 0 0 50%; 
     }
 
-    ul li a {
-        font-size: 16px;
-    }
-
-    header .nom img {
-        width: 60px;
-        height: 60px;
-    }
 }
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; 
+        text-align: center;
     }
 
     ul {
-        width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    ul li {
+        padding: 5px 10px; 
     }
 
     .carousel-item {
@@ -178,16 +176,18 @@ nav button:hover {
 }
 
 @media (max-width: 480px) {
+    header .nom img {
+        width:60px;
+        height:60px;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
 
-    ul li {
-        padding: 5px 8px;
-    }
 
     ul li a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .card {
