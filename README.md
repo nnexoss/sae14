@@ -1,4 +1,4 @@
-# 🥊 Full-Contact Website
+# 🥊 SITE SAE14
 
 Bienvenue sur le répertoire GitHub de mon site ! Ce projet est une page web immersive qui présente l'univers du Full-Contact, un sport de combat dynamique et intense. Voici un aperçu de ce que vous pouvez trouver dans ce projet :
 
@@ -18,3 +18,12 @@ Ce site web offre une introduction au Full-Contact, incluant :
 ## 🔧 Technologies Utilisées
 - **HTML5** : Pour la structure de la page.
 - **CSS3** : Pour le style, incluant des animations et un design responsive.
+- **W3C HTML** : Pour valider les standards techniques liés au HTML.
+- **W3C CSS** : Pour valider les standards techniques liés au CSS.
+
+## 📝 À propos
+
+Ce projet a été réalisé par Mr. Divay
+
+- Lien vers la page : https://nnexoss.github.io/sae14/
+- Mon mail : esteban.divay@etu.unicaen.fr
