@@ -18,6 +18,8 @@ Ce site web offre une introduction au Full-Contact, incluant :
 ## 🔧 Technologies Utilisées
 - **HTML5** : Pour la structure de la page.
 - **CSS3** : Pour le style, incluant des animations et un design responsive.
+- **W3C HTML** : Pour valider les standards techniques liés au HTML.
+- **W3C CSS** : Pour valider les standards techniques liés au CSS.
 
 ## 📝 À propos
 
