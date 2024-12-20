@@ -11,6 +11,7 @@ body {
 } 
 
 header {
+    background-color: #f4f4f4;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -154,7 +155,7 @@ main {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack header items */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -163,7 +164,7 @@ main {
     }
 
     ul li {
-        padding: 5px 10px; /* Reduce padding for smaller screens */
+        padding: 5px 10px; 
     }
 
     .about-page {
@@ -193,7 +194,7 @@ main {
     }
 
     ul li a {
-        font-size: 16px; /* Smaller font for mobile */
+        font-size: 16px;
     }
 
     .me p {

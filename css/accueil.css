@@ -146,7 +146,7 @@ body {
     }
 }
 
-/* Header Styles */
+
 header {
     background-color: #fff;
     padding: 20px;
@@ -156,6 +156,7 @@ header {
     align-items: center;
     flex-shrink: 0;
     flex-wrap: wrap;
+    border-bottom: 1px solid #444;
 }
 
 header .logo h1 {
@@ -191,7 +192,7 @@ main {
     background-color: #f4f4f4;
     background-image: url(../img/full1.jpg), url(../img/full2.jpg), url(../img/full3.jpg), url(../img/full4.jpg), url(../img/full5.jpg);
     background-repeat: no-repeat;
-    background-size: 450px 250px, 400px 400px;
+    background-size:  250px, 400px 400px;
     background-position: 3% 4%, 12% 100%, 50% 95%, 90% 95%, 93% 20%;
 }
 
