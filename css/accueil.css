@@ -1,4 +1,4 @@
-/* Global Styles */
+
 html,
 body {
     width: 100%;
@@ -190,10 +190,10 @@ main {
     padding: 40px 20px;
     text-align: center;
     background-color: #f4f4f4;
-    background-image: url(../img/full1.jpg), url(../img/full2.jpg), url(../img/full3.jpg), url(../img/full4.jpg), url(../img/full5.jpg);
+    background-image: url(../img/full1.jpg), url(../img/full2.jpg), url(../img/full3.jpg), url(../img/full5.jpg);
     background-repeat: no-repeat;
-    background-size:  250px, 400px 400px;
-    background-position: 3% 4%, 12% 100%, 50% 95%, 90% 95%, 93% 20%;
+    background-size:  20%;
+    background-position: 6% 7%, 12% 90%, 50% 85%, 93% 25%;
 }
 
 /* Introduction Section */
