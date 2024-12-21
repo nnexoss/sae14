@@ -41,9 +41,10 @@ h2 {
 }
 
 
-ul {
+header ul {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin:0;
     padding:0;
 }
@@ -201,4 +202,10 @@ nav button:hover {
     .card p {
         font-size: 0.8rem;
     }
+}
+
+/* Hide scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
 }
